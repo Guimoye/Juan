@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.ludimar.myapplication.Registro">
+
+    <ImageButton
+        android:id="@+id/Cabecera"
+        android:layout_width="385dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="1dp"
+        android:background="#ffffff"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/registrarse"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="32dp"
+            android:gravity="top|center_vertical"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="23dp"
+            tools:layout_editor_absoluteY="37dp">
+
+            <TextView
+
+                android:id="@+id/textView4"
+                android:layout_width="128dp"
+                android:layout_height="23dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:text="Usuario"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:visibility="visible"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edtUser"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:elevation="0dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintHorizontal_bias="0.511"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="200dp"
+                android:layout_height="23dp"
+                android:layout_weight="1"
+                android:text="Correo Electrónico"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                app:layout_constraintHorizontal_bias="0.043"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2a"
+                android:layout_width="200dp"
+                android:layout_height="23dp"
+                android:layout_weight="1"
+                android:text="Pregunta"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                app:layout_constraintHorizontal_bias="0.043"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edtPregunta"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewsd2"
+                android:layout_width="200dp"
+                android:layout_height="23dp"
+                android:layout_weight="1"
+                android:text="Respuesta"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                app:layout_constraintHorizontal_bias="0.043"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edtRespuesta"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/bRecuperar"
+                android:layout_width="150dp"
+                android:layout_height="56dp"
+                android:layout_marginBottom="9dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#ffffff"
+                android:contentDescription="@string/app_name"
+
+                android:src="@drawable/botonback"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.963" />
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
